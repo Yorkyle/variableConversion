@@ -18,13 +18,13 @@ Use console.log() to clearly show the before-and-after type conversions.
 
 */
 
-
+// AFTER CHANGES
 let result = "5" - 2;
 console.log("The result is: " + result); // This shows implicit conversion from number (2) to a string ("2")
 
 let isValid = Boolean(null); // Since "False" is truthy, it will run the line; however by changing "False" to null, the Boolean becomes false until something fills the placeholder  
 if (isValid) {
-  console.log("This is valid!");
+  console.log("This is valid!"); // BEFORE CHANGES, "This is valid" would display, but now it does not.
 }
 
 let age = "25";
